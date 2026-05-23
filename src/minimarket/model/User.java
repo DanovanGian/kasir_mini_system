@@ -24,6 +24,9 @@ public class User {
     public String getPassword() {return password;}
     public String getRole() { return role; }
     public String getNama() { return nama; }
+
+    public boolean isAdmin() { return "admin".equals(role); }
+    public boolean isKasir() { return "kasir".equals(role); }
     
 
 }
