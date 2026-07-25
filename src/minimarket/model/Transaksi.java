@@ -26,6 +26,16 @@ public class Transaksi{
         detailList.add(detail);
         total += detail.getSubtotal();
     }
+     public void hapusDetail(int index) {
+        if (index >= 0 && index < detailList.size()) {
+            total -= detailList.get(index).getSubtotal();
+            detailList.remove(index);
+        }
+    }
+
+    public void hitungTotal(){
+
+    }
 
 
     
