@@ -48,4 +48,8 @@ public class BarangRepository {
         return barangList.removeIf(b -> b.getKodeBarang().equalsIgnoreCase(kode));
     }
 
+    public int nextId() {
+        return nextId++;
+    }
+
 }
