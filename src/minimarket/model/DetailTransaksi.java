@@ -15,10 +15,10 @@ public class DetailTransaksi {
 
     }
     //getter dan setter 
-    public double getSubtotal () { return subTotal; }
     public Barang getBarang () { return barang; }
     public int getjumlah () { return jumlah; }
     public double getHargaSatuan () { return hargaSatuan; }
+    public double getSubtotal () { return subTotal; }
 
 
     
