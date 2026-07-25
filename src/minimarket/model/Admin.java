@@ -37,7 +37,7 @@ public class Admin extends User {
 
     public void lihatLaporan(minimarket.repository.TransaksiRepository repo) {
         System.out.println("\n=== LAPORAN PENJUALAN ===");
-        var list = repo.findAll()
+        var list = repo.findAll();
         if (list.isEmpty()) {
             System.out.println("Belum ada transaksi.");
             return;
