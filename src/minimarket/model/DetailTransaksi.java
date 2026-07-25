@@ -1,36 +1,26 @@
 package minimarket.model;
 
 public class DetailTransaksi {
-    private int idTransaksi;
-    private int idBarang;
+    private Barang barang;
     private int jumlah;
     private double hargaSatuan;
+    private double subTotal;
 
-    public DetailTransaksi ( int idTransaksi, int idBarang, int Jumlah, double hargaSatuan){
-        this.idTransaksi = idTransaksi;
-        this.idBarang = idBarang;
+
+    public DetailTransaksi ( int Barang, int Jumlah, double hargaSatuan, double subTotal){
+        this.barang = barang;
         this.jumlah = jumlah;
         this.hargaSatuan = hargaSatuan;
+        this.subTotal = subTotal;
 
     }
     //getter dan setter 
-    public int getidTransaksi () { return idTransaksi; }
-    public int getidBarang () { return idBarang; }
+    public int getSubtotal () { return subTotal; }
+    public int getBarang () { return barang; }
     public int getjumlah () { return jumlah; }
-    public double gethargaSatuan () { return hargaSatuan; }
+    public double getHargaSatuan () { return hargaSatuan; }
 
-    public void setidTransaksi ( int idTransaksi ){
-        this.idTransaksi = idTransaksi;
-    }
-    public void setidBarang ( int Barang ){
-        this.idBarang = idBarang;
-    }
-    public void setjumlah ( int Jumlah ){
-        this.jumlah  = jumlah;
-    }
-    public void sethargaSatuan ( int hargaSatuan ){
-        this.hargaSatuan = hargaSatuan;
-    }
+
     
-    
+
 }
