@@ -22,6 +22,11 @@ public class Transaksi{
         this.status = "proses";
     }
 
+     public void tambahDetail(DetailTransaksi detail) {
+        detailList.add(detail);
+        total += detail.getSubtotal();
+    }
+
 
     
 }
