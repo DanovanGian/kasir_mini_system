@@ -32,4 +32,10 @@ public class BarangRepository {
                 .findFirst().orElse(null);
     }
 
+    public Barang findById(int id) {
+        return barangList.stream()
+                .filter(b -> b.getId() == id)
+                .findFirst().orElse(null);
+    }
+
 }
