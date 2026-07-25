@@ -13,7 +13,14 @@ public class Transaksi{
     private double total;
     private String status; // "selesai" / "batal"
 
-
+    public Transaksi(int idTransaksi, User kasir) {
+        this.idTransaksi = idTransaksi;
+        this.kasir = kasir;
+        this.tanggal = LocalDateTime.now();
+        this.detailList = new ArrayList<>();
+        this.total = 0;
+        this.status = "proses";
+    }
 
 
     
