@@ -20,4 +20,10 @@ public class UserRepository {
             .findFirst()
             .orElse(null);
     }
+    public User login(String username, String password) {
+        User user = findByUsername(username);
+        if (user != null && user.getPassword().equals(password)) return user;
+        return null;
+    }
+
 }
