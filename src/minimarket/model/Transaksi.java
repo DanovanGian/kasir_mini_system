@@ -5,7 +5,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Transaksi{
+public class Transaksi {
     private int idTransaksi;
     private User kasir;
     private LocalDateTime tanggal;
@@ -22,21 +22,52 @@ public class Transaksi{
         this.status = "proses";
     }
 
-     public void tambahDetail(DetailTransaksi detail) {
+    public void tambahDetail(DetailTransaksi detail) {
         detailList.add(detail);
         total += detail.getSubtotal();
     }
-     public void hapusDetail(int index) {
+
+    public void hapusDetail(int index) {
         if (index >= 0 && index < detailList.size()) {
             total -= detailList.get(index).getSubtotal();
             detailList.remove(index);
         }
     }
 
-    public void hitungTotal(){
-
+    public void selesaikan() {
+        this.status = "selesai";
     }
 
+    public void batal() {
+        this.status = "batal";
+    }
 
-    
+    // Getter
+    public int getIdTransaksi() {
+        return idTransaksi;
+    }
+
+    public User getKasir() {
+        return kasir;
+    }
+
+    public LocalDateTime getTanggal() {
+        return tanggal;
+    }
+
+    public List<DetailTransaksi> getDetailList() {
+        return detailList;
+    }
+
+    public double getTotal() {
+        return total;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public String getTanggalFormatted() {
+        return tanggal.format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss"));
+    }
 }
