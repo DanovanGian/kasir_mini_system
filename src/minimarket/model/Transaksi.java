@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Transaksi{
+    private int idTransaksi;
     private 
 
 
