@@ -23,7 +23,7 @@ public class Pembayaran {
         return uangBayar;
     }
 
-    public int getKembalian() {
+    public double getKembalian() {
         return kembalian;
     }
 
