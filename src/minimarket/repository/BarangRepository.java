@@ -17,4 +17,6 @@ public class BarangRepository {
         tambah(new Barang(nextId++, "SNK001", "Chitato 75g",        10000,  50, "Snack"));
         tambah(new Barang(nextId++, "KBR001", "Sabun Lifebuoy",     8500,   70, "Kebersihan"));
     }
+    public void tambah(Barang barang)    { barangList.add(barang); }
+    public List<Barang> findAll()        { return barangList; }
 }
