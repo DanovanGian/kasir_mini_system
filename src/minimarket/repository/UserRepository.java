@@ -13,4 +13,11 @@ public class UserRepository {
         users.add(new User(2, "kasir1", "kasir123",  "Budi Santoso",  "kasir"));
         users.add(new User(3, "kasir2", "kasir123",  "Siti Rahayu",   "kasir"));
     }
+
+    public User findByUsername(String username) {
+        return users.stream()
+            .filter(u -> u.getUsername().equals(username))
+            .findFirst()
+            .orElse(null);
+    }
 }
