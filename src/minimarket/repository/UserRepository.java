@@ -4,3 +4,13 @@ import minimarket.model.User;
 import java.util.ArrayList;
 import java.util.List;
  
+public class UserRepository {
+    private List<User> users = new ArrayList<>();
+ 
+    public UserRepository() {
+        // Data dummy
+        users.add(new User(1, "admin",  "admin123",  "Administrator", "admin"));
+        users.add(new User(2, "kasir1", "kasir123",  "Budi Santoso",  "kasir"));
+        users.add(new User(3, "kasir2", "kasir123",  "Siti Rahayu",   "kasir"));
+    }
+}
