@@ -7,7 +7,7 @@ public class DetailTransaksi {
     private double subTotal;
 
 
-    public DetailTransaksi ( int Barang, int Jumlah, double hargaSatuan, double subTotal){
+    public DetailTransaksi ( Barang Barang, int Jumlah, double hargaSatuan, double subTotal){
         this.barang = barang;
         this.jumlah = jumlah;
         this.hargaSatuan = hargaSatuan;
@@ -15,8 +15,8 @@ public class DetailTransaksi {
 
     }
     //getter dan setter 
-    public int getSubtotal () { return subTotal; }
-    public int getBarang () { return barang; }
+    public double getSubtotal () { return subTotal; }
+    public Barang getBarang () { return barang; }
     public int getjumlah () { return jumlah; }
     public double getHargaSatuan () { return hargaSatuan; }
 
