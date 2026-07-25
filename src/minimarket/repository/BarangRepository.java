@@ -38,4 +38,14 @@ public class BarangRepository {
                 .findFirst().orElse(null);
     }
 
+    public List<Barang> findByNama(String keyword) {
+        return barangList.stream()
+                .filter(b -> b.getNamaBarang().toLowerCase().contains(keyword.toLowerCase()))
+                .collect(Collectors.toList());
+    }
+
+    public boolean hapus(String kode) {
+        return barangList.removeIf(b -> b.getKodeBarang().equalsIgnoreCase(kode));
+    }
+
 }
