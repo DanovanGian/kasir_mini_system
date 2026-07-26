@@ -1,5 +1,5 @@
 package minimarket.service;
 
-public class TransaksiServices {
+public  class TransaksiServices{
     
 }
