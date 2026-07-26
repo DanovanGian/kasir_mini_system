@@ -1,5 +1,5 @@
 package minimarket.util;
-
-public class StrukPrinter {
-    
-}
+ 
+import minimarket.model.DetailTransaksi;
+import minimarket.model.Pembayaran;
+import minimarket.model.Transaksi;
