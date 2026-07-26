@@ -37,7 +37,7 @@ public class Kasir extends User {
                     barang.getStok(), jumlah);
             return false;
         }
-        trx.tambahDetail(new DetailTransaksi(barang, jumlah));
+        trx.tambahDetail(new DetailTransaksi(barang, jumlah, barang.getHarga(), barang.getHarga() * jumlah));
         System.out.printf("✓ %s x%d ditambahkan. Subtotal: Rp%,.0f%n",
                 barang.getNamaBarang(), jumlah, barang.getHarga() * jumlah);
         return true;

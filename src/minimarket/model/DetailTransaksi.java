@@ -14,6 +14,16 @@ public class DetailTransaksi {
         this.subTotal = subTotal;
 
     }
+    // overload untuk compatibility dengan pemanggilan existing new DetailTransaksi(barang, jumlah)
+    public DetailTransaksi(Barang barang, int jumlah) {
+        this(barang, jumlah, barang.getHarga(), barang.getHarga() * jumlah);
+    }
+
+    // getter yang dibutuhkan oleh banyak file
+    public int getJumlah() {
+        return jumlah;
+    }
+
     //getter dan setter 
     public Barang getBarang () { return barang; }
     public int getjumlah () { return jumlah; }
