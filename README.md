@@ -33,7 +33,7 @@ Ini bukan sekadar project kuliah biasa. Arsitekturnya dirancang layaknya aplikas
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                    MINIMARKET DEL                        │
+│                     MINIMARKET                          │
 ├──────────────────────────┬──────────────────────────────┤
 │       ADMIN PANEL        │       KASIR PANEL            │
 ├──────────────────────────┼──────────────────────────────┤
