@@ -174,8 +174,8 @@ java -cp bin minimarket.Main
 
 ```
 ╔════════════════════════════════╗
-║     SISTEM KASIR MINIMARKET   ║
-║           DEL Store            ║
+║     SISTEM KASIR MINIMARKET    ║
+║             Store              ║
 ╚════════════════════════════════╝
 
 === LOGIN ===
@@ -250,7 +250,7 @@ Hitung Kembalian
 
 ```
 ════════════════════════════════════════
-            MINIMARKET DEL
+            MINIMARKET 
          Jl. Sudirman No. 1
 ════════════════════════════════════════
 Kasir   : Budi Santoso
